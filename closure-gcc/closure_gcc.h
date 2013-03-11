@@ -7,7 +7,7 @@
 #define unlikely(_x_)   __builtin_expect(!!(_x_), 0)
 
 #define _closure    ({
-#define _prototype(_rt_, ...) \
+#define _lambda(_rt_, ...) \
         _rt_ $(__VA_ARGS__)
 #define _closure_end    \
         void *_rsp_, *_rbp_, *_cntx_; \
@@ -20,7 +20,6 @@
         *((void **) (&_tramp_[8])) = \
                 (void *) (_tramp_ + 19); \
         (typeof(&$)) ((void *) _tramp_); })
-#define _var(_x_)       _env._x_
 
 #define _closure_free(_x_)  free(_x_)
 

@@ -6,7 +6,7 @@ int (*make_adder(int base, int base2))(int, int) {
     char arr[] = "hello";
     int (*adder)(int, int) = 
         _closure
-            _prototype(int, int arg1, int arg2) {
+            _lambda(int, int arg1, int arg2) {
                 puts(arr);
                 return arg1 + arg2 + a + base;
             }
