@@ -9,3 +9,6 @@ Syntax sugar for block-scope deferring of function invocations. <br />
 ##closure-gcc
 Weird hacking - closure implementation based on GCC nested function trampolines. <br />
 Works under GCC 4.7.2 for Linux on amd64. <br />
+
+##ifexpr-gcc
+A simple if-expression using conditional operator and statement expression. <br />
